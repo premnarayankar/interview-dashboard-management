@@ -34,8 +34,8 @@ export default function LoginForm() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<LoginFormInputs>({});
-
+    watch,
+  } = useForm<LoginFormInputs>({ defaultValues: { role: "" as UserRole } });
   const onSubmit = async (data: LoginFormInputs) => {
     const res = await login(
       data.username.trim(),
@@ -118,7 +118,7 @@ export default function LoginForm() {
           <Select
             labelId="role-label"
             label="Role"
-            defaultValue={roles[0].value}
+            value={watch("role") || ""}
             {...register("role", { required: true })}
           >
             <MenuItem value="">Select role</MenuItem>

@@ -5,6 +5,7 @@ import Provider from "../lib/Provider";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://interview-dashboard-management.vercel.app"),
   title: {
     default: "Interview Management Dashboard",
     template: "%s | Interview Management Dashboard",
