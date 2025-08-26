@@ -34,9 +34,7 @@ export default function LoginForm() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<LoginFormInputs>({
-    defaultValues: { role: "admin" },
-  });
+  } = useForm<LoginFormInputs>({});
 
   const onSubmit = async (data: LoginFormInputs) => {
     const res = await login(

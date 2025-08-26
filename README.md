@@ -4,6 +4,12 @@ A modern, secure, and efficient dashboard for managing interviews, candidates, a
 
 ---
 
+## Live Demo
+
+View and interact with the project here: [https://interview-dashboard-management.vercel.app](https://interview-dashboard-management.vercel.app)
+
+---
+
 ## Table of Contents
 
 - [Features](#features)
@@ -182,8 +188,6 @@ These libraries are used throughout the project for UI, state management, forms,
 
 - Sensitive configuration (such as API endpoints, secrets, and tokens) is managed using environment variables (`.env` files) and never hardcoded in the codebase.
 - This approach helps prevent accidental exposure of secrets and supports secure deployment across environments.
-
----
 
 ## Credits
 

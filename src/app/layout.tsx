@@ -23,24 +23,12 @@ export const metadata: Metadata = {
     "panelist",
     "TA member",
   ],
-  authors: [{ name: "Prem Narayankar", url: "https://yourcompany.com" }],
-  openGraph: {
-    title: "Interview Management Dashboard",
-    description:
-      "A modern, secure, and efficient dashboard for managing interviews, candidates, and feedback.",
-    url: "https://yourdomain.com",
-    siteName: "Interview Management Dashboard",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Interview Management Dashboard",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
+  authors: [
+    {
+      name: "Prem Narayankar",
+      url: "https://interview-dashboard-management.vercel.app",
+    },
+  ],
   twitter: {
     card: "summary_large_image",
     title: "Interview Management Dashboard",
