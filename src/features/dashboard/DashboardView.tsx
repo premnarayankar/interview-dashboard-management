@@ -15,6 +15,7 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
+import { useDebounce } from "@/hooks/useDebounce";
 
 export default function DashboardView() {
   const dispatch = useDispatch();
@@ -22,6 +23,10 @@ export default function DashboardView() {
   const [role, setRole] = useState<string>("");
   const [interviewer, setInterviewer] = useState<string>("");
   const [dateRange, setDateRange] = useState<string>("");
+
+  const debouncedRole = useDebounce(role, 400);
+  const debouncedInterviewer = useDebounce(interviewer, 400);
+  const debouncedDateRange = useDebounce(dateRange, 400);
 
   useEffect(() => {
     let ignore = false;
@@ -67,7 +72,7 @@ export default function DashboardView() {
     return () => {
       ignore = true;
     };
-  }, [dispatch, role, interviewer, dateRange]);
+  }, [dispatch, debouncedRole, debouncedInterviewer, debouncedDateRange]);
 
   return (
     <main className="p-2 sm:p-4 md:p-6 bg-white rounded-xl border border-blue-100 shadow-sm w-full max-w-5xl mx-auto">
