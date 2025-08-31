@@ -58,10 +58,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Provider>
-          <div className="h-screen flex bg-gradient-to-br from-gray-50 to-green-50 overflow-hidden">
+          <div className="h-[100dvh] flex bg-gradient-to-br from-gray-50 to-green-50 overflow-hidden">
             <Sidebar />
             <div className="flex-1 flex flex-col">
-              <main className=" right-0 w-full h-screen flex-1 flex flex-col items-center justify-start px-4 md:px-8 py-4">
+              <main className=" right-0 w-full h-[100dvh] flex-1 flex flex-col items-center justify-start px-4 md:px-8 py-4">
                 <div className="max-w-5xl flex justify-center ">{children}</div>
               </main>
             </div>

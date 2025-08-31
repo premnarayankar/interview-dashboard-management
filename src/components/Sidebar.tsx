@@ -47,7 +47,7 @@ export default function Sidebar() {
       </button>
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 z-40 h-full bg-white border-r border-blue-100 shadow-md flex flex-col py-6 px-4 gap-2 min-h-screen transition-transform duration-200
+        className={`fixed top-0 left-0 z-40 h-full bg-white border-r border-blue-100 shadow-md flex flex-col py-6 px-4 gap-2 min-h-[100dvh] transition-transform duration-200
         w-[80vw] max-w-xs md:w-[35vw] md:max-w-xs
         ${open ? "translate-x-0" : "-translate-x-full"}`}
       >

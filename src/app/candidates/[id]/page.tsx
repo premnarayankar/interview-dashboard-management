@@ -11,7 +11,7 @@ export default async function CandidateDetailPage({
   const id = Number(awaitedParams?.id);
   if (!id) return <div className="p-8">Invalid candidate ID</div>;
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-[100dvh] bg-gray-50">
       <div className="max-w-2xl mx-auto">
         <CandidateDetailTabs userId={id} />
       </div>
